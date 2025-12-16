@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+websockets
+
+langchain==0.0.350
+langchain-anthropic==0.0.2
+langgraph==0.0.20
+langsmith==0.0.69
+
+pytest
+
+python-dotenv
