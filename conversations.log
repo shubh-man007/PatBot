@@ -1,0 +1,261 @@
+2025-12-16 23:38:59,597 - INFO - Created patient patient_20251216_233859_586247 with gastric acidity for doctor doctor_1765908533790
+2025-12-16 23:38:59,915 - INFO - Patient patient_20251216_233859_586247 connected
+2025-12-16 23:39:13,106 - INFO - Patient patient_20251216_233859_586247 - Doctor says: Hi, how are you feeling today ?
+2025-12-16 23:39:14,738 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:39:16,121 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:39:16,123 - INFO - Patient patient_20251216_233859_586247 - Patient says: Hey, thanks for asking. Honestly, I've been having a rough few days. There's this discomfort I keep dealing with that's been getting to me. I'm hoping we can figure out what's going on.
+2025-12-16 23:39:16,125 - INFO - Patient patient_20251216_233859_586247 - Stage: greeting, Accepted: False
+2025-12-16 23:39:38,254 - INFO - Patient patient_20251216_233859_586247 - Doctor says: So what all symptoms have been showing up
+2025-12-16 23:39:40,094 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:39:43,031 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:39:43,034 - INFO - Patient patient_20251216_233859_586247 - Patient says: Well, the main thing I've been noticing is this heartburn that just won't quit. It's been pretty persistent, especially after I eat. And I've also been getting some chest discomfort that's been worrying me a bit. It's not constant, but it comes and goes throughout the day. I'm not sure what's causing it, which is why I wanted to talk to someone about it.
+2025-12-16 23:39:43,035 - INFO - Patient patient_20251216_233859_586247 - Stage: symptom_inquiry, Accepted: False
+2025-12-16 23:40:23,377 - INFO - Patient patient_20251216_233859_586247 disconnected and cleaned up
+2025-12-16 23:40:23,377 - INFO - Patient patient_20251216_233859_586247 disconnected
+2025-12-16 23:49:15,601 - INFO - Created patient patient_20251216_234915_593446 with common cold for doctor doctor_1765909153266
+2025-12-16 23:49:15,911 - INFO - Patient patient_20251216_234915_593446 connected
+2025-12-16 23:49:48,157 - INFO - Patient patient_20251216_234915_593446 - Doctor says: Hi how are you feeling today ?
+2025-12-16 23:49:50,551 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:49:51,773 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:49:51,775 - INFO - Patient patient_20251216_234915_593446 - Patient says: Hey, thanks for asking. Honestly, I'm not feeling great. I've been feeling pretty rough the last couple of days. Just kind of worn down and not myself. How are things on your end?
+2025-12-16 23:49:51,775 - INFO - Patient patient_20251216_234915_593446 - Stage: greeting, Accepted: False
+2025-12-16 23:50:52,430 - INFO - Patient patient_20251216_234915_593446 - Doctor says: I am Dr. Smith, Ill be assisting you today. Let me know what all symptoms you have been experiencing over the past few days ?
+2025-12-16 23:50:54,009 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:50:54,011 - ERROR - Error processing message for patient patient_20251216_234915_593446: None
+2025-12-16 23:51:59,709 - INFO - Patient patient_20251216_234915_593446 disconnected and cleaned up
+2025-12-16 23:51:59,711 - INFO - Patient patient_20251216_234915_593446 disconnected
+2025-12-16 23:52:24,203 - INFO - Created patient patient_20251216_235224_195293 with common cold for doctor doctor_1765909339364
+2025-12-16 23:52:24,522 - INFO - Patient patient_20251216_235224_195293 connected
+2025-12-16 23:52:57,337 - INFO - Patient patient_20251216_235224_195293 - Doctor says: Hi I am Dr. Smith I'll be assisting you today, how are you ?
+2025-12-16 23:52:59,673 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:53:01,519 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:53:01,521 - INFO - Patient patient_20251216_235224_195293 - Patient says: Hi Dr. Smith, thanks for seeing me. Honestly, I've been feeling pretty rough the last couple of days. I'm hoping you can help me figure out what's going on. What do you need to know?
+2025-12-16 23:53:01,521 - INFO - Patient patient_20251216_235224_195293 - Stage: greeting, Accepted: False
+2025-12-16 23:53:19,085 - INFO - Patient patient_20251216_235224_195293 - Doctor says: Let me know the symptoms that you have been facing.
+2025-12-16 23:53:20,826 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:53:22,871 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:53:22,873 - INFO - Patient patient_20251216_235224_195293 - Patient says: Well, I've mainly been dealing with a runny nose that just won't quit, and my throat has been really sore. It's been bothering me since yesterday, and I'm not sure what's causing it. Have you seen a lot of cases like this lately?
+2025-12-16 23:53:22,873 - INFO - Patient patient_20251216_235224_195293 - Stage: symptom_inquiry, Accepted: False
+2025-12-16 23:53:42,238 - INFO - Patient patient_20251216_235224_195293 disconnected and cleaned up
+2025-12-16 23:53:42,238 - INFO - Patient patient_20251216_235224_195293 disconnected
+2025-12-16 23:57:20,500 - INFO - Created patient patient_20251216_235720_492403 with gastric acidity for doctor doctor_1765909636916
+2025-12-16 23:57:20,821 - INFO - Patient patient_20251216_235720_492403 connected
+2025-12-16 23:58:17,614 - INFO - Patient patient_20251216_235720_492403 - Doctor says: Hi I am Dr. Smith Ill be assisting you today, how are you ?
+2025-12-16 23:58:19,277 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:58:20,389 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-16 23:58:20,391 - INFO - Patient patient_20251216_235720_492403 - Patient says: Hi Dr. Smith, thanks for seeing me. I'm doing okay, though I've been dealing with some discomfort lately that's been bothering me. I'm hoping you can help figure out what's going on.
+2025-12-16 23:58:20,392 - INFO - Patient patient_20251216_235720_492403 - Stage: greeting, Accepted: False
+2025-12-16 23:59:00,249 - INFO - Patient patient_20251216_235720_492403 disconnected and cleaned up
+2025-12-16 23:59:00,249 - INFO - Patient patient_20251216_235720_492403 disconnected
+2025-12-16 23:59:19,778 - INFO - Created patient patient_20251216_235919_767121 with dengue for doctor doctor_1765909757297
+2025-12-16 23:59:20,091 - INFO - Patient patient_20251216_235919_767121 connected
+2025-12-16 23:59:43,529 - INFO - Patient patient_20251216_235919_767121 disconnected and cleaned up
+2025-12-16 23:59:43,529 - INFO - Patient patient_20251216_235919_767121 disconnected
+2025-12-17 00:03:18,396 - INFO - Created patient patient_20251217_000318_387857 with fever for doctor doctor_1765909995494
+2025-12-17 00:03:18,715 - INFO - Patient patient_20251217_000318_387857 connected
+2025-12-17 00:03:25,229 - INFO - Patient patient_20251217_000318_387857 disconnected and cleaned up
+2025-12-17 00:03:25,229 - INFO - Patient patient_20251217_000318_387857 disconnected
+2025-12-17 00:17:48,584 - INFO - Created patient patient_20251217_001748_577373 with common cold for doctor doctor_1765910858513
+2025-12-17 00:17:48,895 - INFO - Patient patient_20251217_001748_577373 connected
+2025-12-17 00:18:19,348 - INFO - Patient patient_20251217_001748_577373 - Doctor says: Hi I am Dr. Smith how is it going ?
+2025-12-17 00:18:21,392 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:18:23,123 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:18:23,125 - INFO - Patient patient_20251217_001748_577373 - Patient says: Hey Dr. Smith, thanks for seeing me. Honestly, I've been feeling pretty rough the last couple days. Not my best, but I'm hoping we can figure out what's going on. How are you doing?
+2025-12-17 00:18:23,125 - INFO - Patient patient_20251217_001748_577373 - Stage: greeting, Accepted: False
+2025-12-17 00:18:49,202 - INFO - Patient patient_20251217_001748_577373 - Doctor says: I am fine, thanks for asking. Can you tell me a bit about your symptoms that you have been feeling lately ?
+2025-12-17 00:18:51,552 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:18:53,361 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:18:53,364 - INFO - Patient patient_20251217_001748_577373 - Patient says: Of course. So I've had a pretty bad runny nose for a couple of days now, and my throat has been really sore. It's making it hard to swallow and talk comfortably. The sore throat is probably what's bothering me the most right now. I'm not sure what brought it on, but I'm definitely ready to feel better!
+2025-12-17 00:18:53,364 - INFO - Patient patient_20251217_001748_577373 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 00:19:47,289 - INFO - Patient patient_20251217_001748_577373 - Doctor says: I see, have you taken any tests or medications ?
+2025-12-17 00:19:48,790 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:19:50,645 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:19:50,648 - INFO - Patient patient_20251217_001748_577373 - Patient says: No, I haven't taken any tests yet. As for medications, I've just been taking some over-the-counter stuff to try to manage the symptoms - you know, the usual throat lozenges and decongestants to help with the runny nose. But nothing prescription or anything formal. I was hoping to come in and see what you think before going down any particular route.
+2025-12-17 00:19:50,648 - INFO - Patient patient_20251217_001748_577373 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 00:20:41,105 - INFO - Patient patient_20251217_001748_577373 - Doctor says: Alright, any other symptoms that you have been feeling ?
+2025-12-17 00:20:43,700 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:20:45,684 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:20:45,686 - INFO - Patient patient_20251217_001748_577373 - Patient says: Yeah, I also have a mild cough that comes and goes, and I've been pretty congested. Nothing too severe with the cough, but combined with everything else it's just been uncomfortable. The congestion makes it harder to breathe through my nose, especially at night. That's pretty much everything I've noticed so far.
+2025-12-17 00:20:45,686 - INFO - Patient patient_20251217_001748_577373 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 00:21:36,670 - INFO - Patient patient_20251217_001748_577373 - Doctor says: I believe this to be a case of common cold !!!
+2025-12-17 00:21:38,106 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:21:39,891 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:21:39,892 - INFO - Patient patient_20251217_001748_577373 - Patient says: I appreciate your assessment, Dr. Smith, but I'm a bit concerned about just treating it as a common cold without exploring other possibilities. Given my symptoms, I'd feel more comfortable if we could look into some alternatives or maybe run a test to rule out anything else. Would that be possible? What other options do you think we should consider?
+2025-12-17 00:21:39,893 - INFO - Patient patient_20251217_001748_577373 - Stage: treatment_prescription, Accepted: False
+2025-12-17 00:24:06,251 - INFO - Patient patient_20251217_001748_577373 - Doctor says: I believe its just common cold, just take enough rest, stay hydrated, inhale some good'ol steam. For medication you can take paracetamol and ibuprofen along with some pain killers and you should be solid.
+2025-12-17 00:24:07,125 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:24:09,061 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:24:09,063 - INFO - Patient patient_20251217_001748_577373 - Patient says: Okay, thanks Dr. Smith. That sounds reasonable. I'll make sure to get plenty of rest and keep myself hydrated. I'll give the steam inhalation a try too - that should help with the congestion. And I'll pick up some paracetamol and ibuprofen along with pain killers as you suggested. I appreciate the straightforward advice. Hopefully I'll be feeling better soon with those steps. Thanks again, and take care!
+2025-12-17 00:24:09,063 - INFO - Patient patient_20251217_001748_577373 - Stage: treatment_prescription, Accepted: True
+2025-12-17 00:24:09,064 - INFO - Patient patient_20251217_001748_577373 - Consultation completed
+2025-12-17 00:24:21,729 - INFO - Patient patient_20251217_001748_577373 disconnected and cleaned up
+2025-12-17 00:24:21,729 - INFO - Patient patient_20251217_001748_577373 disconnected
+2025-12-17 00:33:55,409 - INFO - Created patient patient_20251217_003355_401339 with dengue for doctor doctor_1765911825719
+2025-12-17 00:33:55,726 - INFO - Patient patient_20251217_003355_401339 connected
+2025-12-17 00:34:09,055 - INFO - Patient patient_20251217_003355_401339 - Doctor says: Hi I am Dr. Smith how is it going ?
+2025-12-17 00:34:11,039 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:34:12,372 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:34:12,375 - INFO - Patient patient_20251217_003355_401339 - Patient says: Hey Dr. Smith, thanks for checking in. Honestly, I've been feeling pretty rough the last few days. I'm not really sure what's going on with me, but I'm hoping you can help me figure it out. How are you doing today?
+2025-12-17 00:34:12,376 - INFO - Patient patient_20251217_003355_401339 - Stage: greeting, Accepted: False
+2025-12-17 00:34:23,268 - INFO - Patient patient_20251217_003355_401339 - Doctor says: I am fine, thanks for asking. Can you tell me a bit about your symptoms that you have been feeling lately ?
+2025-12-17 00:34:24,200 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:34:26,337 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:34:26,340 - INFO - Patient patient_20251217_003355_401339 - Patient says: Yeah, of course. I've been dealing with a really high fever for a few days now - it's been pretty persistent and uncomfortable. On top of that, I've got this severe headache that just won't go away. It's making it hard to focus on anything. I'm not sure what's causing it, so I'm glad to talk to you about it.
+2025-12-17 00:34:26,340 - INFO - Patient patient_20251217_003355_401339 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 00:34:55,619 - INFO - Patient patient_20251217_003355_401339 - Doctor says: I see, have you taken any tests or medications ?
+2025-12-17 00:34:56,641 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:34:58,959 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 00:34:58,960 - INFO - Patient patient_20251217_003355_401339 - Patient says: I haven't taken any tests yet - that's actually one of the reasons I wanted to reach out. I've just been trying to rest and staying hydrated, but the symptoms aren't really improving. I did take some over-the-counter pain relievers and fever reducers to help manage the fever and headache, but they only seem to help temporarily. I'm thinking it might be time to get properly checked out since it's been going on for a few days now.
+2025-12-17 00:34:58,961 - INFO - Patient patient_20251217_003355_401339 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 00:35:17,071 - INFO - Patient patient_20251217_003355_401339 disconnected and cleaned up
+2025-12-17 00:35:17,071 - INFO - Patient patient_20251217_003355_401339 disconnected
+2025-12-17 00:58:29,249 - INFO - Created patient patient_20251217_005829_236979 with migraine for doctor doctor_1765913301028
+2025-12-17 00:58:29,562 - INFO - Patient patient_20251217_005829_236979 connected
+2025-12-17 01:03:13,359 - INFO - Patient patient_20251217_005829_236979 disconnected and cleaned up
+2025-12-17 01:03:13,359 - INFO - Patient patient_20251217_005829_236979 disconnected
+2025-12-17 01:05:47,561 - INFO - Created patient patient_20251217_010547_552678 with migraine for doctor doctor_1765913603216
+2025-12-17 01:05:47,870 - INFO - Patient patient_20251217_010547_552678 connected
+2025-12-17 01:05:50,820 - INFO - Patient patient_20251217_010547_552678 - Doctor says: Hi I am Dr. Smith how is it going ?
+2025-12-17 01:05:52,455 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:05:53,625 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:05:53,626 - INFO - Patient patient_20251217_010547_552678 - Patient says: Hi Dr. Smith! Thanks for asking. Honestly, I've been dealing with some stuff lately that's been pretty frustrating. I'm hoping you can help me figure out what's going on. How are you doing?
+2025-12-17 01:05:53,627 - INFO - Patient patient_20251217_010547_552678 - Stage: greeting, Accepted: False
+2025-12-17 01:06:10,170 - INFO - Patient patient_20251217_010547_552678 - Doctor says: I am fine, thanks for asking. Can you tell me a bit about your symptoms that you have been feeling lately ?
+2025-12-17 01:06:11,087 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:06:13,458 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:06:13,460 - INFO - Patient patient_20251217_010547_552678 - Patient says: Of course. Well, I've been getting these really severe headaches that come on pretty intensely. They're pretty debilitating when they hit. Along with that, I've been experiencing nausea, which makes everything worse. The combination of the two is making it hard to get through my day sometimes. It's been going on for a bit now and I'm not sure what's causing it.
+2025-12-17 01:06:13,461 - INFO - Patient patient_20251217_010547_552678 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 01:06:22,995 - INFO - Patient patient_20251217_010547_552678 - Doctor says: I see, have you taken any tests or medications ?
+2025-12-17 01:06:24,245 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:06:26,213 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:06:26,215 - INFO - Patient patient_20251217_010547_552678 - Patient says: I haven't done any formal tests yet, which is why I'm reaching out. As for medications, I've tried some over-the-counter pain relievers when the headaches start, but they don't seem to help much. The nausea makes it hard to take anything anyway. I was hoping you might be able to recommend what I should do next or if there are any tests we should run to figure out what's going on. I'm really looking for some answers at this point.
+2025-12-17 01:06:26,215 - INFO - Patient patient_20251217_010547_552678 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 01:08:22,997 - INFO - Patient patient_20251217_010547_552678 - Doctor says: I believe its Migraine. This is what I prescribe:
+2025-12-17 01:08:24,383 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:08:26,254 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:08:26,257 - INFO - Patient patient_20251217_010547_552678 - Patient says: I appreciate you looking into this, Dr. Smith. However, I'd like to explore other options before going with that particular medication. Are there any alternatives you might recommend? I want to make sure we find something that works well for my situation and doesn't have side effects that might be problematic for me. What else would you suggest?
+2025-12-17 01:08:26,257 - INFO - Patient patient_20251217_010547_552678 - Stage: treatment_prescription, Accepted: False
+2025-12-17 01:08:29,340 - INFO - Patient patient_20251217_010547_552678 - Doctor says: "ibuprofen",             "naproxen",             "acetaminophen",             "rest in a dark room",             "hydration",             "cold compress"
+2025-12-17 01:08:30,260 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:08:31,915 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:08:31,917 - INFO - Patient patient_20251217_010547_552678 - Patient says: Thank you, Dr. Smith. That makes sense. I'll definitely try those approaches - the pain relievers, resting in a dark room, staying hydrated, and using a cold compress. That seems like a comprehensive plan to manage things. I appreciate you taking the time to help me out. I'll give these a shot and see how I feel. Thanks again, and take care!
+2025-12-17 01:08:31,917 - INFO - Patient patient_20251217_010547_552678 - Stage: treatment_prescription, Accepted: True
+2025-12-17 01:08:31,918 - INFO - Patient patient_20251217_010547_552678 - Consultation completed
+2025-12-17 01:16:02,051 - INFO - Patient patient_20251217_010547_552678 disconnected and cleaned up
+2025-12-17 01:16:02,051 - INFO - Patient patient_20251217_010547_552678 disconnected
+2025-12-17 01:16:37,275 - INFO - Created patient patient_20251217_011637_266573 with bacterial pneumonia for doctor doctor_1765914381252
+2025-12-17 01:16:37,592 - INFO - Patient patient_20251217_011637_266573 connected
+2025-12-17 01:17:08,167 - INFO - Patient patient_20251217_011637_266573 - Doctor says: Hi I am Dr. Smith how is it going ?
+2025-12-17 01:17:10,127 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:17:11,657 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:17:11,659 - INFO - Patient patient_20251217_011637_266573 - Patient says: Hey Dr. Smith, thanks for asking. Honestly, I've been feeling pretty rough the last few days. Not quite myself. How are you doing?
+2025-12-17 01:17:11,659 - INFO - Patient patient_20251217_011637_266573 - Stage: greeting, Accepted: False
+2025-12-17 01:17:31,978 - INFO - Patient patient_20251217_011637_266573 - Doctor says: I am fine, thanks for asking. Can you tell me a bit about your symptoms that you have been feeling lately ?
+2025-12-17 01:17:32,881 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:17:35,625 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:17:35,627 - INFO - Patient patient_20251217_011637_266573 - Patient says: Yeah, of course. I've had this persistent cough that's been really bothersome - it's producing a lot of phlegm, which is pretty uncomfortable. And I've also been running a fever on and off. It's been going on for a few days now and I'm not sure what's going on. I'm hoping you might have some ideas about what could be causing it.
+2025-12-17 01:17:35,627 - INFO - Patient patient_20251217_011637_266573 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 01:17:47,614 - INFO - Patient patient_20251217_011637_266573 - Doctor says: I see, have you taken any tests or medications ?
+2025-12-17 01:17:48,587 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:17:50,819 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:17:50,820 - INFO - Patient patient_20251217_011637_266573 - Patient says: I haven't taken any tests yet, no. As for medications, I've just been trying some over-the-counter stuff like cough syrup and fever reducers to manage the symptoms, but honestly they're not helping much. I was hoping to come in and get properly checked out to see what's really going on. Do you think I should get some tests done?
+2025-12-17 01:17:50,821 - INFO - Patient patient_20251217_011637_266573 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 01:18:43,639 - INFO - Patient patient_20251217_011637_266573 disconnected and cleaned up
+2025-12-17 01:18:43,639 - INFO - Patient patient_20251217_011637_266573 disconnected
+2025-12-17 01:26:33,233 - INFO - Created patient patient_20251217_012633_224750 with migraine for doctor doctor_1765914966897
+2025-12-17 01:26:33,548 - INFO - Patient patient_20251217_012633_224750 connected
+2025-12-17 01:26:35,498 - INFO - Patient patient_20251217_012633_224750 - Doctor says: Hi I am Dr. Smith how is it going ?
+2025-12-17 01:26:37,190 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:26:40,390 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:26:40,394 - INFO - Patient patient_20251217_012633_224750 - Patient says: Hi Dr. Smith, thanks for asking. Honestly, I've been better. I've had some issues going on that have been pretty bothersome, so I'm glad I could get this appointment. How are you doing?
+2025-12-17 01:26:40,395 - INFO - Patient patient_20251217_012633_224750 - Stage: greeting, Accepted: False
+2025-12-17 01:27:15,781 - INFO - Patient patient_20251217_012633_224750 - Doctor says: I am fine, thanks for asking. Can you tell me a bit about your symptoms that you have been feeling lately ?
+2025-12-17 01:27:16,757 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:27:18,474 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:27:18,476 - INFO - Patient patient_20251217_012633_224750 - Patient says: Of course. I've been dealing with severe headaches that come on pretty frequently. They're really intense and make it hard to function. Along with that, I've been experiencing nausea, which makes things even worse. It's been affecting my daily life quite a bit, so I'm hoping you can help figure out what's going on.
+2025-12-17 01:27:18,476 - INFO - Patient patient_20251217_012633_224750 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 01:27:41,609 - INFO - Patient patient_20251217_012633_224750 disconnected and cleaned up
+2025-12-17 01:27:41,609 - INFO - Patient patient_20251217_012633_224750 disconnected
+2025-12-17 01:44:17,071 - INFO - Created patient patient_20251217_014417_061765 with gastric acidity for doctor doctor_1765915760731
+2025-12-17 01:44:17,388 - INFO - Patient patient_20251217_014417_061765 connected
+2025-12-17 01:44:35,597 - INFO - Patient patient_20251217_014417_061765 - Doctor says: Hi I am Dr. Smith how is it going ?
+2025-12-17 01:44:37,876 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:44:39,769 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:44:39,772 - INFO - Patient patient_20251217_014417_061765 - Patient says: Hey Dr. Smith, thanks for asking. Honestly, I've been dealing with some discomfort lately and I'm hoping you can help me figure out what's going on. I've been feeling pretty uncomfortable, especially at certain times of the day. How are you doing?
+2025-12-17 01:44:39,772 - INFO - Patient patient_20251217_014417_061765 - Stage: greeting, Accepted: False
+2025-12-17 01:45:12,644 - INFO - Patient patient_20251217_014417_061765 - Doctor says: I am fine, thanks for asking. Can you tell me a bit about your symptoms that you have been feeling lately ?
+2025-12-17 01:45:13,560 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:45:17,444 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:45:17,446 - INFO - Patient patient_20251217_014417_061765 - Patient says: Of course. Well, I've been experiencing some heartburn, especially after meals or when I lie down. It's been pretty bothersome. I've also noticed some chest discomfort that comes and goes throughout the day. It's not severe, but it's definitely been affecting my comfort. I'm not entirely sure what's causing it, so I'm glad I could talk to you about it.
+2025-12-17 01:45:17,446 - INFO - Patient patient_20251217_014417_061765 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 01:45:58,128 - INFO - Patient patient_20251217_014417_061765 - Doctor says: I see, have you taken any tests or medications ?
+2025-12-17 01:45:59,223 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:46:01,229 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:46:01,232 - INFO - Patient patient_20251217_014417_061765 - Patient says: I haven't taken any formal tests yet, which is why I wanted to reach out. As for medications, I've tried a few over-the-counter antacids here and there when the heartburn gets bad, and they seem to help temporarily, but it keeps coming back. I haven't been on any prescribed medications though. Do you think we should run some tests to figure out what's going on?
+2025-12-17 01:46:01,233 - INFO - Patient patient_20251217_014417_061765 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 01:47:42,654 - INFO - Patient patient_20251217_014417_061765 - Doctor says: I believe you just have some acidity. Avoid eating spicy food for a few days, get some antacid (like peptobismol) from the pharmacy nearby and you should be solid. You can Also use H2 blockers if things get severe.
+2025-12-17 01:47:43,638 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:47:46,325 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:47:46,327 - INFO - Patient patient_20251217_014417_061765 - Patient says: I appreciate the suggestion, Dr. Smith, but I'm a bit hesitant about just going with over-the-counter antacids without exploring other options first. Since this has been recurring, I'd really prefer to understand what's actually causing this rather than just treating the symptoms. Could we look into some tests to get a clearer picture? Maybe we could also discuss other treatment approaches or lifestyle modifications that might address the root cause more effectively?
+2025-12-17 01:47:46,328 - INFO - Patient patient_20251217_014417_061765 - Stage: treatment_prescription, Accepted: False
+2025-12-17 01:49:19,380 - INFO - Patient patient_20251217_014417_061765 - Doctor says: I believe having avoiding spicy food, staying hydrated and having less oily food should help. You can have something like a light soup or porridge.
+2025-12-17 01:49:21,165 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:49:23,406 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:49:23,409 - INFO - Patient patient_20251217_014417_061765 - Patient says: I understand those suggestions, Dr. Smith, and I appreciate the advice. However, I'm concerned that diet changes alone might not be enough given how persistent this has been. Would it be possible to explore other options? For instance, could we consider prescription medications like H2 blockers or PPIs that might be more effective? Or perhaps run some diagnostic tests to better understand what's going on? I'd feel more confident with a more comprehensive approach rather than just dietary modifications.
+2025-12-17 01:49:23,409 - INFO - Patient patient_20251217_014417_061765 - Stage: treatment_prescription, Accepted: False
+2025-12-17 01:50:16,659 - INFO - Patient patient_20251217_014417_061765 - Doctor says: Yes I suggested using H2 blockers, Proton Pump Inhibhitors would definately help.\
+2025-12-17 01:50:18,682 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:50:20,802 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:50:20,807 - INFO - Patient patient_20251217_014417_061765 - Patient says: Thank you for those suggestions, Dr. Smith. I appreciate you offering those options. However, I'd prefer not to go with H2 blockers or PPIs right now. Are there any other alternatives you might recommend? I'm open to exploring different approaches—maybe other medications or treatments that might work well for my situation?
+2025-12-17 01:50:20,807 - INFO - Patient patient_20251217_014417_061765 - Stage: treatment_prescription, Accepted: False
+2025-12-17 01:51:44,660 - INFO - Patient patient_20251217_014417_061765 - Doctor says: try natural remedies like cold milk, ginger tea, fennel seeds, or aloe vera juice, and lifestyle changes such as eating smaller meals, avoiding trigger foods (spicy, fatty), not eating before bed, and wearing loose clothes. Antacids (quick relief, e.g., Tums, Maalox), H2 Blockers (longer relief, e.g., Pepcid AC/famotidine, Tagamet HB/cimetidine), and Proton Pump Inhibitors (PPIs) (strongest acid reduction, e.g., Omeprazole, Esomeprazole, Lansoprazole) for conditions like heartburn, GERD, and ulcers, with OTC options like Prilosec OTC, Nexium 24HR, and prescription-strength versions available. They work by neutralizing acid (antacids) or blocking its production (H2 blockers, PPIs) to allow healing.
+2025-12-17 01:51:46,513 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:51:48,932 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:51:48,934 - INFO - Patient patient_20251217_014417_061765 - Patient says: That's really helpful, Dr. Smith. I appreciate the comprehensive breakdown of all those options. I think I'll start with the natural remedies and lifestyle changes you mentioned—the ginger tea, fennel seeds, smaller meals, avoiding trigger foods, and not eating close to bedtime. I'll also try wearing looser clothes. If those don't seem to be helping enough, then I can move on to the antacids or other medications you mentioned. Thanks so much for taking the time to go over all this with me. I feel a lot better about having a plan now. Take care!
+2025-12-17 01:51:48,934 - INFO - Patient patient_20251217_014417_061765 - Stage: treatment_prescription, Accepted: True
+2025-12-17 01:51:48,935 - INFO - Patient patient_20251217_014417_061765 - Consultation completed
+2025-12-17 01:55:24,283 - INFO - Patient patient_20251217_014417_061765 disconnected and cleaned up
+2025-12-17 01:55:24,283 - INFO - Patient patient_20251217_014417_061765 disconnected
+2025-12-17 01:59:33,174 - INFO - Created patient patient_20251217_015933_166728 with migraine for doctor doctor_1765916970535
+2025-12-17 01:59:33,493 - INFO - Patient patient_20251217_015933_166728 connected
+2025-12-17 01:59:48,743 - INFO - Patient patient_20251217_015933_166728 - Doctor says: Hi I am Dr. Smith how is it going ?
+2025-12-17 01:59:51,543 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:59:52,819 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 01:59:52,821 - INFO - Patient patient_20251217_015933_166728 - Patient says: Hey Dr. Smith, thanks for asking. Honestly, I've been dealing with some stuff that's been pretty frustrating lately. I'm hoping you can help me figure out what's going on. How are you doing today?
+2025-12-17 01:59:52,821 - INFO - Patient patient_20251217_015933_166728 - Stage: greeting, Accepted: False
+2025-12-17 02:00:03,376 - INFO - Patient patient_20251217_015933_166728 - Doctor says: I am fine, thanks for asking. Can you tell me a bit about your symptoms that you have been feeling lately ?
+2025-12-17 02:00:04,393 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 02:00:07,243 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 02:00:07,245 - INFO - Patient patient_20251217_015933_166728 - Patient says: Yeah, of course. So I've been getting these really severe headaches that come on pretty suddenly. They're pretty debilitating when they hit. On top of that, I've been dealing with nausea, which makes it even harder to get through the day. It's been affecting my work and just my quality of life in general. Do you have any idea what might be causing this?
+2025-12-17 02:00:07,245 - INFO - Patient patient_20251217_015933_166728 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 02:00:48,876 - INFO - Patient patient_20251217_015933_166728 - Doctor says: I see, have you taken any tests or medications ?
+2025-12-17 02:00:50,599 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 02:00:54,752 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 02:00:54,754 - INFO - Patient patient_20251217_015933_166728 - Patient says: I haven't done any formal tests yet, which is part of why I'm reaching out. As for medications, I've tried over-the-counter pain relievers like ibuprofen and acetaminophen, but they don't seem to help much. The nausea has been tough to manage too—I've tried some basic remedies but nothing really takes care of both issues at once. I'm hoping you might be able to run some tests or suggest something that could actually help.
+2025-12-17 02:00:54,754 - INFO - Patient patient_20251217_015933_166728 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 02:01:44,038 - INFO - Patient patient_20251217_015933_166728 - Doctor says: Any other symptoms that have shown up ?
+2025-12-17 02:01:45,249 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 02:01:47,062 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 02:01:47,063 - INFO - Patient patient_20251217_015933_166728 - Patient says: Yeah, actually. I've noticed I'm really sensitive to light—even normal brightness can make things worse. And loud noises or sudden sounds seem to trigger or intensify the headaches too. It's gotten to the point where I find myself wanting to be in a dark, quiet room when these episodes hit. It's pretty limiting, honestly.
+2025-12-17 02:01:47,063 - INFO - Patient patient_20251217_015933_166728 - Stage: symptom_inquiry, Accepted: False
+2025-12-17 02:01:59,880 - INFO - Patient patient_20251217_015933_166728 - Doctor says: This sounds like a case of migraine
+2025-12-17 02:02:01,915 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 02:02:05,715 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 02:02:05,722 - INFO - Patient patient_20251217_015933_166728 - Patient says: I appreciate you looking into this, but I'd like to explore other options before going down that route. Are there alternative diagnoses or approaches we could consider? Maybe we could start with some tests to rule things out, or look at other treatment options? I want to make sure we're covering all the bases here.
+2025-12-17 02:02:05,722 - INFO - Patient patient_20251217_015933_166728 - Stage: treatment_prescription, Accepted: False
+2025-12-17 02:03:57,044 - INFO - Patient patient_20251217_015933_166728 - Doctor says: This would be my prescription: Use ibuprofen, naproxen, acetaminophen as medication. Take rest in a dark room, stay hydration and have cold compressions. I believe this should help out a lot.
+2025-12-17 02:03:58,139 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 02:03:59,989 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 02:03:59,991 - INFO - Patient patient_20251217_015933_166728 - Patient says: Okay, that sounds good. I'll give those a try—the pain relievers, resting in a dark room, staying hydrated, and using cold compresses. That makes sense. Thanks for laying it out so clearly, Dr. Smith. I appreciate your help with this. I'll let you know how it goes.
+2025-12-17 02:03:59,992 - INFO - Patient patient_20251217_015933_166728 - Stage: treatment_prescription, Accepted: True
+2025-12-17 02:03:59,993 - INFO - Patient patient_20251217_015933_166728 - Consultation completed
+2025-12-17 02:04:23,196 - INFO - Patient patient_20251217_015933_166728 disconnected and cleaned up
+2025-12-17 02:04:23,196 - INFO - Patient patient_20251217_015933_166728 disconnected
+2025-12-17 02:10:56,602 - INFO - Created patient patient_20251217_021056_595255 with common cold for doctor doctor_1765917652952
+2025-12-17 02:10:56,926 - INFO - Patient patient_20251217_021056_595255 connected
+2025-12-17 02:10:59,217 - INFO - Created patient patient_20251217_021059_210319 with dengue for doctor doctor_1765917652952
+2025-12-17 02:10:59,535 - INFO - Patient patient_20251217_021059_210319 connected
+2025-12-17 02:11:31,772 - INFO - Patient patient_20251217_021059_210319 disconnected and cleaned up
+2025-12-17 02:11:31,772 - INFO - Patient patient_20251217_021059_210319 disconnected
+2025-12-17 02:11:31,772 - INFO - Patient patient_20251217_021056_595255 disconnected and cleaned up
+2025-12-17 02:11:31,772 - INFO - Patient patient_20251217_021056_595255 disconnected

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatBot</title>
+    <link rel="icon" type="image/jpeg" href="/static/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        :root {
+            --bg-primary: #fafafa;
+            --bg-secondary: #ffffff;
+            --bg-tertiary: #f5f5f5;
+            --border-color: #e5e5e5;
+            --border-dark: #d4d4d4;
+            --text-primary: #171717;
+            --text-secondary: #525252;
+            --text-muted: #a3a3a3;
+            --accent: #171717;
+            --accent-light: #404040;
+            --success: #22c55e;
+            --success-bg: #f0fdf4;
+            --warning-bg: #fefce8;
+            --warning-text: #854d0e;
+        }
+    
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+    
+        .container {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+    
+        .sidebar {
+            width: 320px;
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+    
+        .sidebar-header {
+            padding: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+    
+        .sidebar-header h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+            text-transform: uppercase;
+        }
+    
+        .doctor-info {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+    
+        .doctor-info h3 {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-primary);
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+    
+        .doctor-info p {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+    
+        .create-patient-btn {
+            margin: 20px 24px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+    
+        .create-patient-btn:hover {
+            background: var(--accent-light);
+        }
+    
+        .patient-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0 16px 16px;
+        }
+    
+        .patient-item {
+            background: var(--bg-secondary);
+            padding: 16px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            border: 1px solid var(--border-color);
+        }
+    
+        .patient-item:hover {
+            border-color: var(--border-dark);
+            background: var(--bg-tertiary);
+        }
+    
+        .patient-item.active {
+            border-color: var(--accent);
+            background: var(--bg-tertiary);
+        }
+    
+        .patient-item.completed {
+            opacity: 0.7;
+        }
+    
+        .patient-item h4 {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-primary);
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+    
+        .patient-item p {
+            color: var(--text-secondary);
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+    
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+        }
+    
+        .status-badge.active {
+            background: var(--warning-bg);
+            color: var(--warning-text);
+            border-color: #fef08a;
+        }
+    
+        .status-badge.completed {
+            background: var(--success-bg);
+            color: #166534;
+            border-color: #bbf7d0;
+        }
+    
+        .empty-patients {
+            color: var(--text-muted);
+            text-align: center;
+            font-size: 13px;
+            padding: 20px;
+        }
+    
+        .chat-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-secondary);
+            min-width: 0;
+            overflow: hidden;
+        }
+    
+        .chat-header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+    
+        .chat-header h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+    
+        .chat-header .info {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+    
+        .chat-header .chat-status {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-tertiary);
+        }
+    
+        .symptoms-panel {
+            background: var(--bg-tertiary);
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--border-color);
+            flex-shrink: 0;
+        }
+    
+        .symptoms-panel h4 {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-secondary);
+            font-size: 11px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    
+        .symptom-tag {
+            display: inline-block;
+            background: var(--bg-secondary);
+            padding: 6px 12px;
+            margin: 4px 4px 4px 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+    
+        .messages {
+            flex: 1 1 0;
+            min-height: 0;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            padding: 24px;
+            background: var(--bg-primary);
+            scroll-behavior: smooth;
+        }
+    
+        .message {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .message.doctor {
+            align-items: flex-end;
+        }
+    
+        .message.patient {
+            align-items: flex-start;
+        }
+    
+        .message-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    
+        .message-content {
+            max-width: 70%;
+            padding: 14px 18px;
+            font-size: 14px;
+            line-height: 1.6;
+            word-wrap: break-word;
+        }
+    
+        .message.doctor .message-content {
+            background: var(--accent);
+            color: white;
+        }
+    
+        .message.patient .message-content {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+    
+        .system-message {
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-secondary);
+            font-size: 12px;
+            margin: 24px 0;
+            padding: 12px 16px;
+            background: var(--warning-bg);
+            border: 1px solid #fef08a;
+        }
+    
+        .completion-message {
+            background: var(--success-bg);
+            color: #166534;
+            padding: 16px 20px;
+            margin: 24px 0;
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-weight: 500;
+            border: 1px solid #bbf7d0;
+        }
+    
+        .input-area {
+            padding: 20px 24px;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+    
+        .input-area input {
+            flex: 1;
+            padding: 14px 18px;
+            border: 1px solid var(--border-color);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s ease;
+            background: var(--bg-secondary);
+        }
+    
+        .input-area input:focus {
+            border-color: var(--accent);
+        }
+    
+        .input-area input::placeholder {
+            color: var(--text-muted);
+        }
+    
+        .input-area button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            cursor: pointer;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-weight: 500;
+            transition: background 0.2s ease;
+        }
+    
+        .input-area button:hover {
+            background: var(--accent-light);
+        }
+    
+        .input-area button:disabled {
+            background: var(--border-color);
+            color: var(--text-muted);
+            cursor: not-allowed;
+        }
+    
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: var(--text-muted);
+            background: var(--bg-primary);
+            flex: 1;
+        }
+    
+        .empty-state h3 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+    
+        .empty-state p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+    
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+    
+        ::-webkit-scrollbar-track {
+            background: var(--bg-tertiary);
+        }
+    
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-dark);
+        }
+    
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+    
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                height: auto;
+                max-height: 40vh;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+        }
+    </style>
+</head> 
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Doctor Panel</h2>
+            </div>
+            <div class="doctor-info">
+                <h3>Dr. <span id="doctorName">Smith</span></h3>
+                <p id="doctorId">ID: Loading...</p>
+            </div>
+            <button class="create-patient-btn" onclick="createNewPatient()">
+                + Add New Patient
+            </button>
+            <div class="patient-list" id="patientList">
+                <p class="empty-patients">No patients yet</p>
+            </div>
+        </div>
+
+        <div class="chat-area">
+            <div id="emptyState" class="empty-state">
+                <h3>Welcome, Doctor</h3>
+                <p>Create a new patient to start consultation</p>
+            </div>
+            <div id="chatInterface" style="display: none; flex: 1; flex-direction: column;">
+                <div class="chat-header">
+                    <div>
+                        <h2 id="currentPatientName">Patient</h2>
+                    </div>
+                    <div class="chat-status" id="chatStatus">Active</div>
+                </div>
+                <div id="symptomsPanel" class="symptoms-panel" style="display: none;">
+                    <h4>Revealed Symptoms</h4>
+                    <div id="symptomsList"></div>
+                </div>
+                <div class="messages" id="messages" style="overflow-y: scroll;"></div>
+                <div class="input-area">
+                    <input 
+                        type="text" 
+                        id="messageInput" 
+                        placeholder="Type your message to the patient..." 
+                        onkeypress="handleKeyPress(event)"
+                    />
+                    <button onclick="sendMessage()" id="sendBtn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        const BACKEND_URL = 'ws://localhost:8000';
+        const API_URL = 'http://localhost:8000';
+        
+        let doctorId = 'doctor_' + Date.now();
+        let currentPatientId = null;
+        let patientConnections = {};
+        let patients = {};
+
+        document.getElementById('doctorId').textContent = 'ID: ' + doctorId;
+
+        async function createNewPatient() {
+            try {
+                const response = await fetch(API_URL + '/api/doctor/' + doctorId + '/create-patient', {
+                    method: 'POST'
+                });
+                const data = await response.json();
+                
+                connectToPatient(data.patient_id);
+            } catch (error) {
+                console.error('Error creating patient:', error);
+                alert('Failed to create patient');
+            }
+        }
+
+        function connectToPatient(patientId) {
+            if (patientConnections[patientId]) {
+                switchToPatient(patientId);
+                return;
+            }
+
+            const ws = new WebSocket(BACKEND_URL + '/ws/patient/' + patientId);
+            
+            ws.onopen = function() {
+                console.log('Connected to patient ' + patientId);
+            };
+
+            ws.onmessage = function(event) {
+                const data = JSON.parse(event.data);
+                handlePatientMessage(patientId, data);
+            };
+
+            ws.onerror = function(error) {
+                console.error('WebSocket error for patient ' + patientId + ':', error);
+            };
+
+            ws.onclose = function() {
+                console.log('Disconnected from patient ' + patientId);
+                delete patientConnections[patientId];
+            };
+
+            patientConnections[patientId] = ws;
+            patients[patientId] = { messages: [], symptoms: [], accepted: false };
+            
+            switchToPatient(patientId);
+        }
+
+        function handlePatientMessage(patientId, data) {
+            const patient = patients[patientId];
+            if (!patient) return;
+
+            if (data.type === 'system') {
+                let systemText = data.content || '';
+                if (systemText.includes('Condition:')) {
+                    systemText = 'Patient connected.';
+                }
+                patient.messages.push({ type: 'system', content: systemText });
+            } else if (data.type === 'patient_response') {
+                patient.messages.push({ 
+                    type: 'patient', 
+                    content: data.content 
+                });
+                patient.symptoms = data.revealed_symptoms || [];
+                patient.stage = data.stage;
+                patient.accepted = data.accepted;
+            } else if (data.type === 'conversation_complete') {
+                patient.messages.push({ 
+                    type: 'completion', 
+                    content: data.content 
+                });
+                patient.accepted = true;
+            } else if (data.type === 'error') {
+                patient.messages.push({ 
+                    type: 'system', 
+                    content: 'Error: ' + data.content 
+                });
+            }
+
+            if (currentPatientId === patientId) {
+                renderMessages();
+                updateSymptomsPanel();
+            }
+            
+            updatePatientList();
+        }
+
+        function switchToPatient(patientId) {
+            currentPatientId = patientId;
+            document.getElementById('emptyState').style.display = 'none';
+            document.getElementById('chatInterface').style.display = 'flex';
+            
+            const patient = patients[patientId];
+            document.getElementById('currentPatientName').textContent = patientId;
+            
+            renderMessages();
+            updateSymptomsPanel();
+            updatePatientList();
+            
+            document.getElementById('messageInput').disabled = patient.accepted;
+            document.getElementById('sendBtn').disabled = patient.accepted;
+            document.getElementById('chatStatus').textContent = 
+                patient.accepted ? 'Completed' : 'Active';
+        }
+
+        function renderMessages() {
+            if (!currentPatientId) return;
+            
+            const messagesDiv = document.getElementById('messages');
+            const patient = patients[currentPatientId];
+            
+            messagesDiv.innerHTML = '';
+            
+            patient.messages.forEach(function(msg) {
+                if (msg.type === 'system') {
+                    const div = document.createElement('div');
+                    div.className = 'system-message';
+                    div.textContent = msg.content;
+                    messagesDiv.appendChild(div);
+                } else if (msg.type === 'completion') {
+                    const div = document.createElement('div');
+                    div.className = 'completion-message';
+                    div.textContent = msg.content;
+                    messagesDiv.appendChild(div);
+                } else {
+                    const div = document.createElement('div');
+                    div.className = 'message ' + msg.type;
+                    
+                    const label = document.createElement('div');
+                    label.className = 'message-label';
+                    label.textContent = msg.type === 'doctor' ? 'You' : 'Patient';
+                    
+                const content = document.createElement('div');
+                content.className = 'message-content';
+                if (msg.type === 'patient') {
+                    content.innerHTML = marked.parse(msg.content || '');
+                } else {
+                    content.textContent = msg.content;
+                }
+                    
+                    div.appendChild(label);
+                    div.appendChild(content);
+                    messagesDiv.appendChild(div);
+                }
+            });
+            
+            setTimeout(function() {
+                messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            }, 0);
+        }
+
+        function updateSymptomsPanel() {
+            if (!currentPatientId) return;
+            
+            const patient = patients[currentPatientId];
+            const panel = document.getElementById('symptomsPanel');
+            const list = document.getElementById('symptomsList');
+            
+            if (patient.symptoms && patient.symptoms.length > 0) {
+                panel.style.display = 'block';
+                list.innerHTML = patient.symptoms
+                    .map(function(s) { return '<span class="symptom-tag">' + s + '</span>'; })
+                    .join('');
+            } else {
+                panel.style.display = 'none';
+            }
+        }
+
+        function updatePatientList() {
+            const listDiv = document.getElementById('patientList');
+            const patientIds = Object.keys(patients);
+            
+            if (patientIds.length === 0) {
+                listDiv.innerHTML = '<p class="empty-patients">No patients yet</p>';
+                return;
+            }
+            
+            listDiv.innerHTML = patientIds.map(function(id) {
+                const patient = patients[id];
+                const isActive = id === currentPatientId;
+                const isCompleted = patient.accepted;
+                
+                return '<div class="patient-item ' + (isActive ? 'active' : '') + ' ' + (isCompleted ? 'completed' : '') + '" onclick="switchToPatient(\'' + id + '\')">' +
+                    '<h4>' + id + '</h4>' +
+                    '<span class="status-badge ' + (isCompleted ? 'completed' : 'active') + '">' +
+                    (isCompleted ? 'Completed' : 'In Progress') +
+                    '</span>' +
+                '</div>';
+            }).join('');
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            
+            if (!message || !currentPatientId) return;
+            
+            const ws = patientConnections[currentPatientId];
+            if (!ws || ws.readyState !== WebSocket.OPEN) {
+                alert('Not connected to patient');
+                return;
+            }
+            
+            patients[currentPatientId].messages.push({
+                type: 'doctor',
+                content: message
+            });
+            
+            ws.send(JSON.stringify({ message: message }));
+            
+            renderMessages();
+            input.value = '';
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        window.onload = function() {
+            console.log('Doctor interface loaded');
+            console.log('Doctor ID:', doctorId);
+        };
+    </script>
+</body>
+</html>
