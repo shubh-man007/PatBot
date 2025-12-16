@@ -32,16 +32,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# CONDITION_SYMPTOMS = {
-#     "common cold": ["runny nose", "sore throat", "mild cough", "congestion", "fatigue", "sneezing"],
-#     "fever": ["high temperature", "chills", "sweating", "headache", "body aches", "weakness"],
-#     "dengue": ["high fever", "severe headache", "pain behind eyes", "joint pain", "muscle pain", "rash"],
-#     "migraine": ["severe headache", "nausea", "sensitivity to light", "sensitivity to sound", "visual disturbances"],
-#     "bacterial pneumonia": ["cough with phlegm", "fever", "chest pain", "difficulty breathing", "fatigue", "chills"],
-#     "gastric acidity": ["heartburn", "chest discomfort", "bitter taste", "bloating", "nausea", "burping"]
-# }
-
-
 class ConnectionManager:
     def __init__(self):
         self.doctor_patients: Dict[str, list] = {}
