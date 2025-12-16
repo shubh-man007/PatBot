@@ -1,4 +1,5 @@
 import os
+import json
 import random
 import logging
 from datetime import datetime
@@ -7,10 +8,12 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
-import json
+from dotenv import load_dotenv
 
 from patient.patient import Patient
 from patient.diagnosis import CONDITION_SYMPTOMS
+
+load_dotenv()
 
 logging.basicConfig(
     level=logging.INFO,
@@ -198,4 +201,4 @@ async def patient_websocket(websocket: WebSocket, patient_id: str):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)), reload=True)
