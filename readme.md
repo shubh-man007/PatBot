@@ -26,7 +26,7 @@ PatBot is built as a small FastAPI backend serving a single-page doctor console,
 
 ![Agent Graph](https://github.com/shubh-man007/PatBot/blob/main/assets/graph.png)
 
-## Technologies Used
+## Tech Stack
 
 - **Backend framework**: FastAPI (ASGI) with CORS middleware.
 - **Realtime transport**: WebSockets for doctor–patient chat sessions.
@@ -43,4 +43,3 @@ PatBot is built as a small FastAPI backend serving a single-page doctor console,
 - **Testing & logging**:
   - Basic unit tests under `src/test` (for patient logic).
   - Structured logging of conversations to `src/conversations.log`.
-  
