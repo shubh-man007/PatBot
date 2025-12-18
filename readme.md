@@ -38,7 +38,7 @@ graph TD
   - Creates new patients via REST, opens WebSocket connections per patient, and maintains a list of active consultations.
   - Displays chat history, conversation status, and a live list of revealed symptoms for the selected patient.
 
-![Agent Graph](https://github.com/shubh-man007/PatBot/tree/main/assets)
+![Agent Graph](https://github.com/shubh-man007/PatBot/blob/main/assets/graph.png)
 
 ## Technologies Used
 
